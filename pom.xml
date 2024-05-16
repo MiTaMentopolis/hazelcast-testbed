@@ -97,7 +97,7 @@
         <debezium.version>1.9.5.Final</debezium.version>
         <grpc.version>1.48.0</grpc.version>
         <guava.version>30.1.1-jre</guava.version>
-        <hadoop.version>3.3.4</hadoop.version>
+        <hadoop.version>3.3.5</hadoop.version>
         <h2.version>2.1.214</h2.version>
         <!-- The Jackson version must match the version in EE, if you change this you must send EE PR as well -->
         <jackson.version>2.13.4.20221013</jackson.version>
@@ -386,7 +386,7 @@
                         com.hazelcast.test.annotation.NightlyTest
                     </excludedGroups>
                     <!-- Use TCP for IPC communication to avoid warnings: Corrupted STDOUT by directly writing... -->
-                    <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory" />
+                    <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
                 </configuration>
             </plugin>
 
@@ -412,7 +412,7 @@
                         com.hazelcast.test.annotation.NightlyTest
                     </excludedGroups>
                     <!-- Use TCP for IPC communication to avoid warnings: Corrupted STDOUT by directly writing... -->
-                    <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory" />
+                    <forkNode implementation="org.apache.maven.plugin.surefire.extensions.SurefireForkNodeFactory"/>
                 </configuration>
                 <executions>
                     <execution>
